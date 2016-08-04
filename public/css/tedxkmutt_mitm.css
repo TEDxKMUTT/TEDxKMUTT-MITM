@@ -1,1 +1,43 @@
 /* Main TEDxKMUTT Sass File */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: darkgray;
+}
+
+.navbar {
+  width: 100%;
+  border-radius: 0;
+  margin: 0;
+  padding: 30px 210px 30px 210px;
+  background-color: white;
+  display: inline-flex;
+}
+
+.navbar .logo {
+  margin-right: 20px;
+}
+
+.navbar .logo img {
+  max-height: 50px;
+}
+
+.navbar .menu {
+  width: 100%;
+  margin: auto;
+}
+
+.navbar .menu .menu-item {
+  text-align: center;
+}
+
+.navbar .menu .lang {
+  display: inline-flex;
+}
+
+.banner {
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0 210px 0 210px;
+}
