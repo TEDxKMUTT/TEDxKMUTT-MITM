@@ -2,10 +2,18 @@
 
 $pd-side: 210px
 
+//Global Config
 body
     font-family: 'Roboto', sans-serif
-    background-color: darkgray
+    background-color: black
 
+.header
+    font-size: 35px
+    font-weight: 100
+    color: white
+    margin-bottom: 50px
+
+//Component Config
 .navbar
     width: 100%
     border-radius: 0
@@ -33,5 +41,16 @@ body
 .banner
     width: 100%
 
-.container-fluid
+.default-content
     padding: 0 $pd-side 0 $pd-side
+
+.about
+    @extend .default-content
+
+    background-image: url("/img/ABOUT_bg.png");
+
+    .card
+        margin-bottom: 25px
+        padding: 20px
+        border-radius: 2px
+        background-color: white

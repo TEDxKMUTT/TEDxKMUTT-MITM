@@ -1,7 +1,14 @@
 /* Main TEDxKMUTT Sass File */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: darkgray;
+  background-color: black;
+}
+
+.header {
+  font-size: 35px;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 50px;
 }
 
 .navbar {
@@ -38,6 +45,17 @@ body {
   width: 100%;
 }
 
-.container-fluid {
+.default-content, .about {
   padding: 0 210px 0 210px;
+}
+
+.about {
+  background-image: url("/img/ABOUT_bg.png");
+}
+
+.about .card {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: white;
 }
