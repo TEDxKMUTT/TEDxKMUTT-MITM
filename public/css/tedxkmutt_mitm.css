@@ -2,6 +2,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: black;
+  background-image: url("/img/BACKGROUND1.png");
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
 }
 
 .header {
@@ -45,10 +51,6 @@ body {
   width: 100%;
 }
 
-.default-content, .about {
-  padding: 0 210px 0 210px;
-}
-
 .about {
   background-image: url("/img/ABOUT_bg.png");
 }
@@ -58,4 +60,20 @@ body {
   padding: 20px;
   border-radius: 2px;
   background-color: white;
+}
+
+.about .card h3 {
+  margin: 0 0 20px 0;
+  color: #e80000;
+  font-weight: 500;
+}
+
+.contact {
+  color: white;
+}
+
+.footer {
+  witdh: 100%;
+  height: 10px;
+  background-color: #e80000;
 }

@@ -1,11 +1,17 @@
 /* Main TEDxKMUTT Sass File */
 
 $pd-side: 210px
+$tedred: #e80000
 
 //Global Config
 body
     font-family: 'Roboto', sans-serif
     background-color: black
+    background-image: url("/img/BACKGROUND1.png");
+
+.container-fluid
+    padding: 0
+    margin: 0
 
 .header
     font-size: 35px
@@ -41,12 +47,7 @@ body
 .banner
     width: 100%
 
-.default-content
-    padding: 0 $pd-side 0 $pd-side
-
 .about
-    @extend .default-content
-
     background-image: url("/img/ABOUT_bg.png");
 
     .card
@@ -54,3 +55,16 @@ body
         padding: 20px
         border-radius: 2px
         background-color: white
+
+        h3
+            margin: 0 0 20px 0
+            color: $tedred
+            font-weight: 500
+
+.contact
+    color: white
+
+.footer
+    witdh: 100%
+    height: 10px
+    background-color: $tedred
