@@ -1,0 +1,26 @@
+{
+  "name": "TEDxKMUTT-MITM",
+  "homepage": "https://github.com/Th1nkK1D/TEDxKMUTT-MITM",
+  "authors": [
+    "Th1nkK1D <witheep@gmail.com>"
+  ],
+  "description": "TEDxKMUTT Official Website",
+  "main": "index.html",
+  "keywords": [
+    "tedx",
+    "kmutt"
+  ],
+  "license": "KMUTT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}
