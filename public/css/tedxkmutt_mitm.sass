@@ -19,6 +19,18 @@ body
     color: white
     margin-bottom: 30px
 
+::-webkit-input-placeholder
+   color: white
+
+:-moz-placeholder
+   color: white
+
+::-moz-placeholder
+   color: white
+
+:-ms-input-placeholder
+   color: white
+
 //Component Config
 .navbar
     width: 100%
@@ -64,20 +76,32 @@ body
 .contact
     color: white
 
+    .social-icon
+        width: 100%
+        margin: 10px 0 10px 0
+
+        img
+            margin-right: 10px
+            width: 30px
+            height: 30px
+
     form
-        color: white
         text-align: right
 
         input
+            width: 100%
+            padding: 8px
             margin-bottom: 8px
             border: 0
             border-radius: 0
             background-color: #acacac
 
         textarea
-            margin-bottom: 8px
             width: 100%
+            margin-bottom: 8px
+            padding: 5px
             background-color: #acacac
+            resize: none
 
         button
             padding: 10px
