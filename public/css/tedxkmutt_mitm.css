@@ -140,6 +140,71 @@ body {
   font-weight: 500;
 }
 
+.location {
+  background-color: #484848;
+}
+
+.location .map-area {
+  background-color: lightgray;
+  height: 450px;
+}
+
+.location .map-area .map {
+  position: absolute;
+  left: -50px;
+  top: 40px;
+  border: white 10px solid;
+}
+
+.update .ig-frame {
+  background-color: white;
+  border-radius: 2px;
+}
+
+.update .ig-frame .ig-head {
+  padding: 10px;
+}
+
+.update .ig-frame .ig-head img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 25px;
+}
+
+.update .ig-frame .ig-head div {
+  display: inline-block;
+}
+
+.update .ig-frame .ig-head .ig-name {
+  font-size: 12px;
+}
+
+.update .ig-frame .ig-head .ig-date {
+  font-size: 10px;
+  color: #e8e8e8;
+}
+
+.update .ig-frame .ig-caption {
+  padding: 10px;
+  font-size: 10px;
+  border-bottom: 1px #e8e8e8 solid;
+}
+
+.update .ig-frame .ig-action {
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.update .ig-frame .ig-action .left {
+  text-align: left;
+}
+
+.update .ig-frame .ig-action .right {
+  text-align: right;
+}
+
 .contact {
   color: white;
 }
@@ -188,22 +253,6 @@ body {
 
 .contact form button:hover {
   background-color: #e8e8e8;
-}
-
-.location {
-  background-color: #484848;
-}
-
-.location .map-area {
-  background-color: lightgray;
-  height: 450px;
-}
-
-.location .map-area .map {
-  position: absolute;
-  left: -50px;
-  top: 40px;
-  border: white 10px solid;
 }
 
 .footer {
