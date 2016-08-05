@@ -3,6 +3,7 @@
 //Color Config
 $tedred: #e80000
 $tedgray: #acacac
+$hovergray: #e8e8e8
 
 //Global Config
 body
@@ -21,16 +22,20 @@ body
     margin-bottom: 30px
 
 ::-webkit-input-placeholder
-   color: white
+    font-weight: 100
+    color: white
 
 :-moz-placeholder
-   color: white
+    font-weight: 100
+    color: white
 
 ::-moz-placeholder
-   color: white
+    font-weight: 100
+    color: white
 
 :-ms-input-placeholder
-   color: white
+    font-weight: 100
+    color: white
 
 //Component Config
 .navbar
@@ -53,6 +58,9 @@ body
         width: 100%
         margin: auto
 
+        .col-sm-2
+            padding: 5px
+
         .menu-item
             text-align: center
             font-size: 15px
@@ -65,9 +73,16 @@ body
         .menu-item:hover
             text-decoration: none
 
-        .active
+            div
+                background-color: $hovergray
+
+        .menu-item + .active
             color: $tedred
             font-weight: 400
+
+        .menu-item + .active:hover
+            div
+                background-color: white
 
         .lang
             display: inline-flex
@@ -80,12 +95,24 @@ body
 
             .lang-item:hover
                 text-decoration: none
+                background-color: $hovergray
+
+            .active
+                color: white
+                background-color: $tedred
+
+            .active:hover
+                background-color: $tedred
 
 .banner
     width: 100%
 
 .about
     background-image: url("/img/ABOUT_bg.png");
+
+    .row
+        div
+            //padding: 20px
 
     .card
         margin-bottom: 25px
@@ -112,6 +139,7 @@ body
 
     form
         text-align: right
+        margin: 50px 0 50px 0
 
         input
             width: 100%
@@ -129,10 +157,31 @@ body
             resize: none
 
         button
+            border: 0
             padding: 10px
             width: 200px
             color: $tedred
             font-weight: 700
+            background-color: white
+
+        button:hover
+            background-color: $hovergray
+
+
+.location
+    background-color: #484848
+
+    .address
+
+    .map-area
+        background-color: lightgray
+        height: 450px
+
+        .map
+            position: absolute
+            left: -50px
+            top: 40px
+            border: white 10px solid
 
 .footer
     witdh: 100%

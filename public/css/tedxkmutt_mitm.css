@@ -18,18 +18,22 @@ body {
 }
 
 ::-webkit-input-placeholder {
+  font-weight: 100;
   color: white;
 }
 
 :-moz-placeholder {
+  font-weight: 100;
   color: white;
 }
 
 ::-moz-placeholder {
+  font-weight: 100;
   color: white;
 }
 
 :-ms-input-placeholder {
+  font-weight: 100;
   color: white;
 }
 
@@ -58,6 +62,10 @@ body {
   margin: auto;
 }
 
+.navbar .menu .col-sm-2 {
+  padding: 5px;
+}
+
 .navbar .menu .menu-item {
   text-align: center;
   font-size: 15px;
@@ -73,9 +81,17 @@ body {
   text-decoration: none;
 }
 
-.navbar .menu .active {
+.navbar .menu .menu-item:hover div {
+  background-color: #e8e8e8;
+}
+
+.navbar .menu .menu-item + .active {
   color: #e80000;
   font-weight: 400;
+}
+
+.navbar .menu .menu-item + .active:hover div {
+  background-color: white;
 }
 
 .navbar .menu .lang {
@@ -91,6 +107,16 @@ body {
 
 .navbar .menu .lang .lang-item:hover {
   text-decoration: none;
+  background-color: #e8e8e8;
+}
+
+.navbar .menu .lang .active {
+  color: white;
+  background-color: #e80000;
+}
+
+.navbar .menu .lang .active:hover {
+  background-color: #e80000;
 }
 
 .banner {
@@ -131,6 +157,7 @@ body {
 
 .contact form {
   text-align: right;
+  margin: 50px 0 50px 0;
 }
 
 .contact form input {
@@ -151,10 +178,32 @@ body {
 }
 
 .contact form button {
+  border: 0;
   padding: 10px;
   width: 200px;
   color: #e80000;
   font-weight: 700;
+  background-color: white;
+}
+
+.contact form button:hover {
+  background-color: #e8e8e8;
+}
+
+.location {
+  background-color: #484848;
+}
+
+.location .map-area {
+  background-color: lightgray;
+  height: 450px;
+}
+
+.location .map-area .map {
+  position: absolute;
+  left: -50px;
+  top: 40px;
+  border: white 10px solid;
 }
 
 .footer {
