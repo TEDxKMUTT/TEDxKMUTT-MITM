@@ -34,12 +34,15 @@ body {
 }
 
 .navbar {
-  width: 100%;
   border-radius: 0;
   margin: 0;
-  padding: 30px 210px 30px 210px;
   background-color: white;
+}
+
+.navbar .nav-content {
+  width: 100%;
   display: inline-flex;
+  padding: 20px;
 }
 
 .navbar .logo {
@@ -57,10 +60,37 @@ body {
 
 .navbar .menu .menu-item {
   text-align: center;
+  font-size: 15px;
+  color: #acacac;
+  font-weight: 300;
+}
+
+.navbar .menu .menu-item div {
+  padding: 5px;
+}
+
+.navbar .menu .menu-item:hover {
+  text-decoration: none;
+}
+
+.navbar .menu .active {
+  color: #e80000;
+  font-weight: 400;
 }
 
 .navbar .menu .lang {
   display: inline-flex;
+}
+
+.navbar .menu .lang .lang-item {
+  text-align: center;
+  font-weight: 300;
+  padding: 5px;
+  color: #acacac;
+}
+
+.navbar .menu .lang .lang-item:hover {
+  text-decoration: none;
 }
 
 .banner {

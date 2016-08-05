@@ -1,7 +1,8 @@
 /* Main TEDxKMUTT Sass File */
 
-$pd-side: 210px
+//Color Config
 $tedred: #e80000
+$tedgray: #acacac
 
 //Global Config
 body
@@ -33,12 +34,14 @@ body
 
 //Component Config
 .navbar
-    width: 100%
     border-radius: 0
     margin: 0
-    padding: 30px $pd-side 30px $pd-side
     background-color: white
-    display: inline-flex
+
+    .nav-content
+        width: 100%
+        display: inline-flex
+        padding: 20px
 
     .logo
         margin-right: 20px
@@ -52,9 +55,31 @@ body
 
         .menu-item
             text-align: center
+            font-size: 15px
+            color: $tedgray
+            font-weight: 300
+
+            div
+                padding: 5px
+
+        .menu-item:hover
+            text-decoration: none
+
+        .active
+            color: $tedred
+            font-weight: 400
 
         .lang
             display: inline-flex
+
+            .lang-item
+                text-align: center
+                font-weight: 300
+                padding: 5px
+                color: $tedgray
+
+            .lang-item:hover
+                text-decoration: none
 
 .banner
     width: 100%
@@ -94,13 +119,13 @@ body
             margin-bottom: 8px
             border: 0
             border-radius: 0
-            background-color: #acacac
+            background-color: $tedgray
 
         textarea
             width: 100%
             margin-bottom: 8px
             padding: 5px
-            background-color: #acacac
+            background-color: $tedgray
             resize: none
 
         button
@@ -108,7 +133,6 @@ body
             width: 200px
             color: $tedred
             font-weight: 700
-
 
 .footer
     witdh: 100%
