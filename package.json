@@ -1,0 +1,24 @@
+{
+  "name": "tedxkmutt-mitm",
+  "version": "1.0.0",
+  "description": "TEDxKMUTT's official website - Man In the Mirror",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Th1nkK1D/TEDxKMUTT-MITM.git"
+  },
+  "author": "Withee Poositasai, Jirachai Chansivanon, Kanisorn Sutham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Th1nkK1D/TEDxKMUTT-MITM/issues"
+  },
+  "homepage": "https://github.com/Th1nkK1D/TEDxKMUTT-MITM#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
