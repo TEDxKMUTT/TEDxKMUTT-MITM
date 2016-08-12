@@ -21,6 +21,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "bootstrap-sass": "^3.3.7",
+    "gridster": "gridster-js#^0.7.0"
   }
 }

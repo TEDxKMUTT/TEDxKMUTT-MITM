@@ -1,0 +1,111 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/libs/gridster/dist/jquery.gridster.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">
+                        <div class="logo"><img src="img/TEDxKMUTT1.png"></div>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-right navbar-nav">
+                        <li class="active">
+                            <a href="#">
+                                HOME
+                                <div class="line"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                ABOUT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SCHEDULE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                VENUE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                CONTACT
+                            </a>
+                        </li>
+                        <li>
+                            <ul class="lang_select">
+                                <li class="selected">
+                                    <a href="#">EN</a>
+                                </li>
+                                <li>
+                                    <a href="#">TH</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="banner" class="parallax-window" data-parallax="scroll" data-image-src="img/COVER_image.png" data-z-index="1000"></div>
+
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="heading">ABOUT</h2>
+                <div class="gridster">
+                    <ul>
+                        <li data-row="1" data-col="1" data-sizex="2" data-sizey="2"></li>
+                        <li data-row="1" data-col="2" data-sizex="4" data-sizey="2"></li>
+
+                        <li data-row="2" data-col="1" data-sizex="4" data-sizey="4"></li>
+                        <li data-row="2" data-col="2" data-sizex="2" data-sizey="2"></li>
+                        <li data-row="2" data-col="2" data-sizex="2" data-sizey="2"></li>
+
+                        <li data-row="4" data-col="1" data-sizex="3" data-sizey="2"></li>
+                        <li data-row="4" data-col="2" data-sizex="3" data-sizey="2"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/parallaxjs/parallax.min.js"></script>
+    <script src="assets/libs/gridster/dist/jquery.gridster.min.js"></script>
+
+    <script>
+        $('.parallax-window').parallax({imageSrc: '/img/COVER_image.png'});
+
+        $(function(){
+            var gridster = $(".gridster ul").gridster({
+                widget_margins: [20, 20],
+                widget_base_dimensions: [140, 140],
+                resize: {
+                    enabled: true,
+                    axes: ['y']
+                }
+            }).data('gridster');
+
+            // $(".gridster ul").gridster({
+            //     widget_margins: [10, 10],
+            //     widget_base_dimensions: [140, 140]
+            // });
+            
+            // gridster.add_widget('<li class="new">The HTML of the widget...</li>', 2, 1);
+        });
+    </script>
+</body>
+</html>
