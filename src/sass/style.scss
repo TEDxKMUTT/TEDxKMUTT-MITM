@@ -162,7 +162,7 @@ nav {
 				}
 				.content {
 					line-height: 1.5em;
-					font-size: .9em;
+					font-size: 1em;
 					color: #444;
 				}
 				.content+.content {
@@ -640,7 +640,8 @@ nav {
 	color: white;
 	padding: 0 5px;
 	position: relative;
-
+	font-weight: 700;
+	letter-spacing: 0;
 	a {
 		color: white;
 	}
