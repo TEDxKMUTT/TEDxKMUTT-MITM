@@ -265,7 +265,7 @@
 				</div>
 			</div>
 			<div id="minimap">
-				<img src="img/map.png" alt="Map">
+				<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJo9ACXe6Y4jARVz1zYeQaUeI&key=AIzaSyCGkDrxuA1oFzgOsTiMqgWiY8aTQZYGTu4" ></iframe>
 			</div>
 		</div>
 	</div>
@@ -338,6 +338,11 @@
 				verticalMargin: 10
 			};
 			$('.grid-stack').gridstack(options);
+		});
+		$(function(){
+			$('#minimap').on('click', function(){
+				$(this).addClass('interact');
+			});
 		});
 	</script>
 
