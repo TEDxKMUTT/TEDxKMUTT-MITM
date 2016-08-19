@@ -3,12 +3,12 @@ $tedgray: #acacac;
 $linkgray: #C9C2C1;
 $hovergray: #e8e8e8;
 $tedsection: #E74540;
-
-*{
+* {
     outline: 0;
 }
 
-html,body{
+html,
+body {
     padding: 0;
     margin: 0;
     // background-color: $tedred;
@@ -19,45 +19,46 @@ html,body{
     font-family: 'Roboto', sans-serif;
 }
 
-.web_ctrl{
+.web_ctrl {
     max-width: 1366px;
     margin: 0 auto;
 }
 
-.navbar{
+.navbar {
     border-radius: 0px;
 }
-.navbar-brand{
+
+.navbar-brand {
     height: 72px;
 }
 
-nav{
+nav {
     background-color: #FFF;
     padding: 20px 0px;
     margin-bottom: 0px !important;
-    .navbar-toggle{
+    .navbar-toggle {
         border: 1px solid $tedred;
         background-color: rgba($color: #f00, $alpha: 0.05);
-        &.collapsed{
+        &.collapsed {
             background-color: transparent;
         }
-        .icon-bar{
+        .icon-bar {
             background-color: $tedred;
         }
     }
-    .logo{
-        img{
+    .logo {
+        img {
             height: 100%;
         }
     }
-    .nav{
-        li{
-            &.active{
-                a{
+    .nav {
+        li {
+            &.active {
+                a {
                     color: $tedred;
                 }
-                .line{
-                    @media only screen and (min-width: 769px){
+                .line {
+                    @media only screen and (min-width: 769px) {
                         background-color: $tedred;
                         height: 2px;
                         margin-top: 5px;
@@ -68,38 +69,37 @@ nav{
                 }
             }
         }
-        a{
+        a {
             color: $linkgray;
             &:hover,
-            &:focus{
+            &:focus {
                 background-color: transparent;
                 color: $tedgray;
             }
         }
-
-        .lang_select{
+        .lang_select {
             margin: 15px;
             padding: 0px;
-            li{
+            li {
                 list-style: none;
                 display: inline;
-                &.selected{
+                &.selected {
                     background-color: $tedred;
                     padding: 5px 1px 5px 5px;
-                    a{
+                    a {
                         color: #fff;
                     }
                 }
             }
-            li+li{
+            li+li {
                 padding-left: 5px;
             }
-            a{
+            a {
                 padding-top: 15px;
                 padding-bottom: 15px;
                 color: $tedred;
                 &:hover,
-                &:focus{
+                &:focus {
                     text-decoration: none;
                 }
             }
@@ -107,20 +107,20 @@ nav{
     }
 }
 
-#banner{
+#banner {
     // min-height: 500px;
     background: transparent;
-    img{
+    img {
         width: 100%;
     }
 }
 
-.fullscreen{
+.fullscreen {
     height: 100%;
     width: 100%;
 }
 
-#about{
+#about {
     // background-color: #E74540;
     // height: 200%;
     padding: 5em 0px;
@@ -128,15 +128,14 @@ nav{
     background-size: cover;
     width: 100%;
     color: #FFF;
-    h2{
+    h2 {
         font-weight: 300;
-        &.heading{
+        &.heading {
             margin: 40px 0px 40px 20px;
         }
     }
-
-    .grids{
-        .grid-stack-item{
+    .grids {
+        .grid-stack-item {
             border-radius: 2px;
             // list-style: none;
             background-color: #FFF;
@@ -145,41 +144,41 @@ nav{
             cursor: pointer;
             transform: scale(0.98);
             transition: all ease .25s;
-            .grid-stack-item-content{
+            .grid-stack-item-content {
                 overflow: auto;
                 padding: 1.5em 1.5em;
-                .heading{
+                .heading {
                     font-weight: 700;
                     color: $tedred;
                     margin: 0px 0px .75em 0px;
-                    &.big{
+                    &.big {
                         margin: 0px 0px 1.2em 0px;
                     }
                 }
-                .content{
+                .content {
                     line-height: 1.5em;
                     font-size: .9em;
                     color: #444;
                 }
-                .content+.content{
+                .content+.content {
                     margin-top: 30px;
                 }
             }
-            &:hover{
+            &:hover {
                 box-shadow: 0px 0px 8px 1px rgba($color: #000, $alpha: .25);
                 transform: scale(1.0);
             }
-            &:active{
+            &:active {
                 // background-color: #efefef;
             }
         }
     }
 }
 
-#event{
+#schedule {
     // height: 600px;
-    h2{
-        &.heading{
+    h2 {
+        &.heading {
             color: #FFF;
             font-weight: 300;
             text-align: center;
@@ -187,36 +186,36 @@ nav{
     }
 }
 
-#update{
+#update {
     height: 400px;
-    h2{
+    h2 {
         color: #FFF;
         font-weight: 300;
-        &.heading{
+        &.heading {
             margin: 40px 0px 40px 20px;
         }
     }
 }
 
-#map{
+#map {
     background-color: #484848;
     height: 400px;
-    h2{
+    h2 {
         color: #FFF;
         font-weight: 300;
-        &.heading{
+        &.heading {
             margin: 40px 0px 40px 20px;
         }
     }
 }
 
-#contact{
+#contact {
     height: 500px;
     border-bottom: 8px solid $tedred;
-    h2{
+    h2 {
         color: #FFF;
         font-weight: 300;
-        &.heading{
+        &.heading {
             margin: 40px 0px 40px 20px;
         }
     }
@@ -251,10 +250,7 @@ nav{
     font-weight: 400;
     color: #fff;
     text-align: center;
-    background-color: #aab2bd;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px
+    background-color: $tedsection;
 }
 
 .timeline dl dd {
@@ -270,7 +266,7 @@ nav{
     width: 22px;
     height: 22px;
     margin-left: -11px;
-    background-color: #4fc1e9;
+    background-color: $tedred;
     border: 4px solid #f5f7fa;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -284,7 +280,7 @@ nav{
     display: inline-block;
     width: 100px;
     padding: 10px 20px;
-    color: #4fc1e9
+    color: #fff;
 }
 
 .timeline dl dd .events {
@@ -293,9 +289,6 @@ nav{
     padding: 10px 10px 0;
     margin-top: 31px;
     background-color: #fff;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px
 }
 
 .timeline dl dd .events:before {
@@ -314,7 +307,8 @@ nav{
 
 .timeline dl dd .events .events-body {
     overflow: hidden;
-    zoom:1}
+    zoom: 1
+}
 
 .timeline dl dd .events .events-body .events-heading {
     margin: 0 0 10px;
@@ -351,45 +345,57 @@ nav{
 
 @media screen and (max-width: 767px) {
     .timeline dl:before {
-        left:60px
+        left: 60px
     }
-
     .timeline dl dt {
         margin: 0 0 30px
     }
-
     .timeline dl dd .circ {
         left: 60px
     }
-
     .timeline dl dd .time {
         left: 0
     }
-
     .timeline dl dd.pos-left .time {
         padding: 10px 0;
         margin-left: 0;
         text-align: left
     }
-
     .timeline dl dd.pos-left .events {
         float: right;
         width: 84%
     }
-
     .timeline dl dd.pos-left .events:before {
         left: -12px;
         border-color: transparent #fff transparent transparent
     }
-
     .timeline dl dd.pos-right .time {
         padding: 10px 0;
         margin-left: 0;
         text-align: left
     }
-
     .timeline dl dd.pos-right .events {
         float: right;
         width: 84%
     }
+}
+
+#schedule {
+    .date {
+        color: $tedgray;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .event-where {
+        color: $tedred;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .event-regis {
+        font-size: 24px;
+    }
+}
+
+.section {
+    padding: 30px;
 }
