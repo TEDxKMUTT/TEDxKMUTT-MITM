@@ -204,13 +204,15 @@ nav {
   background-repeat: no-repeat;
   background-position-x: right;
   color: #FFF;
-  // height: 400px;
+  padding: 2em 0em;
   #minimap {
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
     width: 500px;
-    left: 50%;
+    // left: 50%;
+    right: 0;
+    text-align: right;
     img {
       width: 75%;
       border: 5px solid #FFF;
@@ -227,7 +229,7 @@ nav {
   }
   .heading {
     font-weight: 500;
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin-bottom: .5em;
     p {
       margin: 0;
@@ -261,13 +263,104 @@ nav {
 }
 
 #contact {
-  height: 500px;
   border-bottom: 8px solid $tedred;
+  color: #FFF;
   h2 {
     color: #FFF;
     font-weight: 300;
     &.heading {
       margin: 40px 0px 40px 20px;
+    }
+  }
+  .social-zone{
+    margin: 3em 0em 8em 0em;
+    .social{
+      display: inline-block;
+      img{
+        width: 3rem;
+      }
+    }
+    .social + .social {
+      margin-left: 1.5em;
+    }
+  }
+  .license{
+    font-weight: 300;
+    font-size: .65em;
+  }
+  .k{
+    font-size: 1.115em;
+  }
+  .thin{
+    font-weight: 300;
+  }
+
+  #contact-form{
+    width: 40%;
+    text-align: right;
+  }
+
+  .ted-contact-form-control{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 0;
+    input,
+    textarea,
+    button{
+      padding: .75em .65em;
+      width: 100%;
+      -webkit-appearance: none;
+      border: 0;
+    }
+    textarea{
+      &.no-resize{
+        resize: none;
+      }
+    }
+    
+    button{
+      background-color: #FFF;
+      color: $tedred;
+      width: 60%;
+      text-transform: uppercase;
+      &.block{
+        width: 100%;
+      }
+      &:hover,
+      &:focus{
+        // background-color: darken($color: $hovergray, $amount: 8);
+        background-color: $hovergray;
+      }
+      &:active{
+        // box-shadow: inset 0px 3px 10px 0px rgba($color: #000, $alpha: 0.7);
+        background-color: darken($color: $hovergray, $amount: 15);
+      }
+    }
+    input,
+    textarea{
+      background-color: #ABACAD;
+      color: #FFF;
+      $contact-placeholder: rgba($color: #FFF, $alpha: .75);
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $contact-placeholder;
+        font-weight: 300;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: $contact-placeholder;
+        font-weight: 300;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: $contact-placeholder;
+        font-weight: 300;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $contact-placeholder;
+        font-weight: 300;
+      }
+    }
+    .ted-contact-form{
+      margin: .75em 0em;
     }
   }
 }
