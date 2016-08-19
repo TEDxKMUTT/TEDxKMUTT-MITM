@@ -698,3 +698,20 @@ nav {
 		display: inline-block;
 	}
 }
+
+.events {
+
+	.type-ticket {
+		margin: 0;
+		font-size: 12px;	
+	}
+
+	.last {
+		margin-top: 10px;
+	}
+
+	a {
+		color: $tedred;
+	}
+
+}
