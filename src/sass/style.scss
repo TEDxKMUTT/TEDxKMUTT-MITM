@@ -30,7 +30,9 @@ body {
 
 .navbar-brand {
 	height: 72px;
+	padding: 5px;
 }
+
 
 nav {
 	background-color: #FFF;
@@ -53,9 +55,12 @@ nav {
 	}
 	.nav {
 		li {
+			margin-left: 10px;
+
 			&.active {
 				a {
 					color: $tedred;
+					font-weight: 500;
 				}
 				.line {
 					@media only screen and (min-width: 769px) {
@@ -69,62 +74,38 @@ nav {
 				}
 			}
 		}
-		.logo {
-			img {
-				height: 100%;
+		a {
+			color: $linkgray;
+			&:hover,
+			&:focus {
+				background-color: transparent;
+				color: $tedgray;
 			}
 		}
-		.nav {
+		.lang_select {
+			margin: 10px 15px;
+			padding: 0px;
 			li {
-				&.active {
+				list-style: none;
+				display: inline-block;
+				padding: 5px;
+				&.selected {
+					background-color: $tedred;
 					a {
-						color: $tedred;
-					}
-					.line {
-						@media only screen and (min-width: 769px) {
-							background-color: $tedred;
-							height: 2px;
-							margin-top: 5px;
-							margin-left: auto;
-							margin-right: auto;
-							width: 70%;
-						}
+						color: #fff;
 					}
 				}
+			}
+			li+li {
+				padding-left: 5px;
 			}
 			a {
-				color: $linkgray;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				color: $tedred;
 				&:hover,
 				&:focus {
-					background-color: transparent;
-					color: $tedgray;
-				}
-			}
-			.lang_select {
-				margin: 15px;
-				padding: 0px;
-				li {
-					list-style: none;
-					display: inline;
-					&.selected {
-						background-color: $tedred;
-						padding: 5px 1px 5px 5px;
-						a {
-							color: #fff;
-						}
-					}
-				}
-				li+li {
-					padding-left: 5px;
-				}
-				a {
-					padding-top: 15px;
-					padding-bottom: 15px;
-					color: $tedred;
-					&:hover,
-					&:focus {
-						text-decoration: none;
-					}
+					text-decoration: none;
 				}
 			}
 		}
@@ -139,10 +120,12 @@ nav {
 		width: 100%;
 	}
 }
+
 .fullscreen {
 	height: 100%;
 	width: 100%;
 }
+
 #about {
 	// background-color: #E74540;
 	// height: 200%;
@@ -157,7 +140,6 @@ nav {
 			margin: 40px 0px 40px 20px;
 		}
 	}
-	
 	.grids {
 		.grid-stack-item {
 			border-radius: 2px;
@@ -198,6 +180,7 @@ nav {
 		}
 	}
 }
+
 #schedule {
 	// height: 600px;
 	h2 {
@@ -281,6 +264,7 @@ nav {
 		margin: 2.5em 0em 4em 0em;
 	}
 }
+
 #contact {
 	height: 500px;
 	border-bottom: 8px solid $tedred;
@@ -292,12 +276,14 @@ nav {
 		}
 	}
 }
+
 .timeline dl {
 	position: relative;
 	top: 0;
 	padding: 20px 0;
 	margin: 0
 }
+
 .timeline dl:before {
 	position: absolute;
 	top: 0;
@@ -309,6 +295,7 @@ nav {
 	content: '';
 	background-color: #ccd1d9
 }
+
 .timeline dl dt {
 	position: relative;
 	top: 30px;
@@ -321,10 +308,12 @@ nav {
 	text-align: center;
 	background-color: $tedsection;
 }
+
 .timeline dl dd {
 	position: relative;
 	z-index: 200
 }
+
 .timeline dl dd .circ {
 	position: absolute;
 	top: 40px;
@@ -339,6 +328,7 @@ nav {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%
 }
+
 .timeline dl dd .time {
 	position: absolute;
 	top: 31px;
@@ -348,13 +338,15 @@ nav {
 	padding: 10px 20px;
 	color: #fff;
 }
+
 .timeline dl dd .events {
 	position: relative;
 	width: 47%;
-	padding: 10px 10px 0;
+	padding: 30px 20px;
 	margin-top: 31px;
 	background-color: #fff;
 }
+
 .timeline dl dd .events:before {
 	position: absolute;
 	top: 12px;
@@ -364,39 +356,49 @@ nav {
 	border-style: solid;
 	border-width: 6px
 }
+
 .timeline dl dd .events .events-object {
 	margin-right: 10px
 }
+
 .timeline dl dd .events .events-body {
 	overflow: hidden;
 	zoom: 1
 }
+
 .timeline dl dd .events .events-body .events-heading {
 	margin: 0 0 10px;
 	font-size: 14px
 }
+
 .timeline dl dd.pos-right .time {
 	margin-left: -100px;
 	text-align: right
 }
+
 .timeline dl dd.pos-right .events {
 	float: right
 }
+
 .timeline dl dd.pos-right .events:before {
 	left: -12px;
 	border-color: transparent #fff transparent transparent
 }
+
 .timeline dl dd.pos-left .time {
 	margin-left: 0;
 	text-align: left
 }
+
 .timeline dl dd.pos-left .events {
 	float: left
 }
+
 .timeline dl dd.pos-left .events:before {
 	right: -12px;
 	border-color: transparent transparent transparent #fff
 }
+
 @media screen and (max-width: 767px) {
 	.timeline dl:before {
 		left: 60px
@@ -433,6 +435,7 @@ nav {
 		width: 84%
 	}
 }
+
 #schedule {
 	.date {
 		color: $tedgray;
@@ -448,6 +451,28 @@ nav {
 		font-size: 24px;
 	}
 }
+
 .section {
 	padding: 30px;
+}
+
+#menu .nav .apply-now {
+	background-color: #e80000;
+	color: white;
+	padding: 0 5px;
+	position: relative;
+
+	a {
+		color: white;
+	}
+
+	&:before {
+		border: 1px solid #fff;
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+	}
 }
