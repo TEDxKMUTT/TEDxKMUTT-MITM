@@ -10,7 +10,7 @@ var all_boostrap = './src/bootstrap-sass/assets/stylesheets/**/**/*.+(scss|sass)
 var css_output = './public/assets/css/';
 var view_dir = './views/*.+(ejs)';
 
-var port = 3000;
+var port = 5001;
 var ip = '127.0.0.1';
 var proxy = ip+":"+port;
 
