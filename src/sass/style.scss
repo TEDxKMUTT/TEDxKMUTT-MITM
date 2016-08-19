@@ -285,7 +285,7 @@ nav {
     }
   }
   .social-zone{
-    margin: 3em 0em 8em 0em;
+    margin: 3em 0em 12em 0em;
     .social{
       display: inline-block;
       img{
@@ -589,4 +589,9 @@ nav {
     left: 5px;
     right: 5px;
 	}
+}
+
+.fb-page-box,
+.twitter-box {
+	margin-top: 40px;
 }
