@@ -176,7 +176,7 @@ nav{
     }
 }
 
-#event{
+#schedule{
     // height: 600px;
     h2{
         &.heading{
@@ -251,10 +251,7 @@ nav{
     font-weight: 400;
     color: #fff;
     text-align: center;
-    background-color: #aab2bd;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px
+    background-color: $tedsection;
 }
 
 .timeline dl dd {
@@ -270,7 +267,7 @@ nav{
     width: 22px;
     height: 22px;
     margin-left: -11px;
-    background-color: #4fc1e9;
+    background-color: $tedred;
     border: 4px solid #f5f7fa;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -284,7 +281,7 @@ nav{
     display: inline-block;
     width: 100px;
     padding: 10px 20px;
-    color: #4fc1e9
+    color: #fff;
 }
 
 .timeline dl dd .events {
@@ -293,9 +290,6 @@ nav{
     padding: 10px 10px 0;
     margin-top: 31px;
     background-color: #fff;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px
 }
 
 .timeline dl dd .events:before {
@@ -392,4 +386,26 @@ nav{
         float: right;
         width: 84%
     }
+}
+
+#schedule {
+    .date {
+        color: $tedgray;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .event-where {
+        color: $tedred;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .event-regis {
+        font-size: 24px;
+    }
+}
+
+.section {
+    padding: 30px;
 }
