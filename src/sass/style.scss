@@ -73,6 +73,17 @@ body {
 					right: 0px;
 				}
 			}
+
+			&:active{
+				background-color: darken($color: $tedred, $amount: 20);
+				&:before{
+					top: 7px;
+					bottom: 7px;
+					left: 7px;
+					right: 7px;
+				}
+			}
+
 		}
 	}
 }
@@ -716,6 +727,16 @@ nav {
 			right: 0px;
 		}
 	}
+
+		&:active{
+			background-color: darken($color: $tedred, $amount: 20);
+			&:before{
+				top: 7px;
+				bottom: 7px;
+				left: 7px;
+				right: 7px;
+			}
+		}
 }
 
 .fb-page-box,
