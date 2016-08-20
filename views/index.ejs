@@ -400,7 +400,8 @@
 		$(function() {
 			var options = {
 				cellHeight: 80,
-				verticalMargin: 10
+				verticalMargin: 10,
+				alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 			};
 			$('.grid-stack').gridstack(options);
 		});
