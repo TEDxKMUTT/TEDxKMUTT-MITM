@@ -33,7 +33,49 @@ body {
 	height: 55px;
 	padding: 5px;
 }
+.apply-now-btn-zone{
+	margin-top: -2em;
+	margin-bottom: 2em;
+	text-align: center;
+	button{
+		&.apply-now{
+			-webkit-appearance: none;
+			border: 0;
+			font-size: 1em;
+			background-color: #e80000;
+			color: white;
+			padding: 1.25em 2.25em;
+			position: relative;
+			font-weight: 700;
+			letter-spacing: 0;
+			transition: all ease .5s;
+			a {
+				color: white;
+			}
 
+			&:before {
+				border: 1px solid #fff;
+				content: "";
+				position: absolute;
+				top: 5px;
+				bottom: 5px;
+				left: 5px;
+				right: 5px;
+				transition: all ease .25s;
+			}
+
+			&:hover{
+				background-color: darken($color: $tedred, $amount: 10);
+				&:before{
+					top: 0px;
+					bottom: 0px;
+					left: 0px;
+					right: 0px;
+				}
+			}
+		}
+	}
+}
 
 nav {
 	background-color: #FFF;
@@ -115,6 +157,7 @@ nav {
 
 #banner {
 	// min-height: 500px;
+	width: 100%;
 	margin-top: 6em;
 	background: transparent;
 	padding: 0;
@@ -648,18 +691,30 @@ nav {
 	position: relative;
 	font-weight: 700;
 	letter-spacing: 0;
+	transition: all ease .5s;
 	a {
 		color: white;
 	}
 
 	&:before {
 		border: 1px solid #fff;
-    content: "";
-    position: absolute;
-    top: 5px;
-    bottom: 5px;
-    left: 5px;
-    right: 5px;
+		content: "";
+		position: absolute;
+		top: 5px;
+		bottom: 5px;
+		left: 5px;
+		right: 5px;
+		transition: all ease .25s;
+	}
+
+	&:hover{
+		background-color: darken($color: $tedred, $amount: 10);
+		&:before{
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+		}
 	}
 }
 
