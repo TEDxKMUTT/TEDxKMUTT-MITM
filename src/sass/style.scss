@@ -238,7 +238,7 @@ nav {
 		margin-left: 20px;
 		margin-top: 10px;
 		margin-bottom: 10px;
-		font-style: italic; 
+		font-style: italic;
 	}
 }
 
@@ -293,7 +293,7 @@ nav {
 			position: absolute;
 			display: block;
 		}
-		
+
 		&:before {
 			content: '';
 			top: 0;
@@ -329,7 +329,7 @@ nav {
 		&:hover:after {
 			opacity: 1;
 		}
-		
+
 		&.interact {
 			&:before, &:after {
 				display: none;
@@ -381,6 +381,29 @@ nav {
   }
 }
 
+#sponsor{
+	color: #FFF;
+	h2 {
+		color: #FFF;
+		font-weight: 300;
+		&.heading {
+			margin: 40px 0px 40px 10px;
+		}
+	}
+	.spon{
+		margin-top: 15px;
+		margin-bottom: 15px;
+		transition: all ease .25s;
+		&:hover{
+			transform: scale(1.05);
+		}
+		img{
+			vertical-align: middle;
+			width: 100%;
+		}
+	}
+}
+
 #contact {
   border-bottom: 8px solid $tedred;
   color: #FFF;
@@ -418,7 +441,7 @@ nav {
 	.cont {
 		font-size: .9em;
 		color: white;
-		
+
 		p {
 			margin:0 0 5px 0;
 		}
@@ -455,7 +478,7 @@ nav {
         resize: none;
       }
     }
-    
+
     button{
       background-color: rgba($color: $tedred, $alpha: .75);
       color: white;
@@ -776,7 +799,7 @@ nav {
 
 	.type-ticket {
 		margin: 0;
-		font-size: 12px;	
+		font-size: 12px;
 	}
 
 	.last {
@@ -789,7 +812,7 @@ nav {
 
 }
 
-@media (min-width: 992px) and (max-width: 1199px) { 
+@media (min-width: 992px) and (max-width: 1199px) {
 	.navbar-header {
 		display: block;
 		width: 100%;
