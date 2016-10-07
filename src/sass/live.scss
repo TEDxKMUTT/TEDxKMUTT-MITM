@@ -27,9 +27,18 @@ iframe{
         padding: .75rem 1.25rem;
         background-color: #D2D52F;
         font-size: 2rem;
+        outline: 0;
         img{
           max-width: 4rem;
           margin-right: 1rem;
+        }
+        &:hover,
+        &:focus{
+          background-color: darken(#D2D52F, 5);
+        }
+
+        &:active{
+          background-color: darken(#D2D52F, 8);
         }
       }
     }
