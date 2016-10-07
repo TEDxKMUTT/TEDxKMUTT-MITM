@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset='utf-8'>
+	<meta charset="utf-8">
 	<title>TEDxKMUTT : Man In The Mirror | LIVE!</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,8 +43,34 @@
 	<link rel="stylesheet" href="assets/libs/gridstack/dist/gridstack.min.css">
 </head>
 
-<body data-spy="scroll" data-target="#menu" data-offset="110">
-  <div class="header container-fluid">
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="row tedxkmutt">
+				<img class="img-responsive" src="img/tedx_logo.png" alt="">
+			</div>
+			<div class="row clock text-center">
+				<div id="clock" class="">
+		      TEST
+		    </div>
+			</div>
+		</div>
+
+		<div id="live">
+			<div class="row">
+				<div class="pull-right">
+					<div class="col-md-12 live_cir">
+						<img src="/img/live_cir.png" class="live-cir" alt="">
+			      LIVE
+					</div>
+				</div>
+			</div>
+			<div id="in" class="col-md-12 card">
+	      <iframe width="100%" height="70%" src="https://www.youtube.com/embed/GeoUELDgyM4" frameborder="0" allowfullscreen></iframe>
+	    </div>
+		</div>
+	</div>
+  <!-- <div class="header container-fluid">
     <div class="col-sm-5 col-xs-6 text-left">
       <a href="/">
         <img src="/img/TEDxKMUTT1.png" alt="TEDxKMUTT">
@@ -53,17 +80,18 @@
       TEST
     </div>
     <div class="col-sm-4 col-xs-6 text-right">
-      <img src="/img/live_cir.png" class="live-cir" alt="">
-      LIVE
+
     </div>
   </div>
 
-  <div class="bar col-md-8 col-md-offset-2">
-    <!-- TEST -->
-  </div>
-
-  <div id="youtube" class="container-fluid">
-    <div id="in" class="col-md-8 col-md-offset-2 card">
+  <div id="youtube" class="container">
+		<div class="row">
+			<div class="pull-right">
+				<img src="/img/live_cir.png" class="live-cir" alt="">
+	      LIVE
+			</div>
+		</div>
+    <div id="in" class="col-md-12 card">
       <iframe width="100%" height="70%" src="https://www.youtube.com/embed/GeoUELDgyM4" frameborder="0" allowfullscreen></iframe>
     </div>
     <div id="alt" class="col-md-8 col-md-offset-2 col-xs-12 text-center card">
@@ -73,7 +101,7 @@
         AIS Play Application
       </button>
     </div>
-  </div>
+  </div> -->
 </body>
 
 <script src="assets/libs/jquery/dist/jquery.min.js"></script>

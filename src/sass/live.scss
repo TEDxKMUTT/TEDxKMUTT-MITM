@@ -3,7 +3,7 @@ $tedred: #e80000;
 html,
 body{
   background-color: #e7e7e7;
-  // background-image: url('https://d3d9cvaw5rrb1q.cloudfront.net/events/backgrounds/000/000/886/original/bg_tedxkmutt.jpg?1471334766');
+  background-image: url('https://d3d9cvaw5rrb1q.cloudfront.net/events/backgrounds/000/000/886/original/bg_tedxkmutt.jpg?1471334766');
 }
 
 iframe{
@@ -53,30 +53,50 @@ iframe{
   }
 }
 
-.header{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: #FFF;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  line-height: 4rem;
-  font-size: 1.5rem;
-  color: #000;
-  z-index: 999;
-  #clock{
-    font-size: 2rem;
+// .header{
+//   position: fixed;
+//   width: 100%;
+//   top: 0;
+//   background-color: #FFF;
+//   padding-top: 1em;
+//   padding-bottom: 1em;
+//   line-height: 4rem;
+//   font-size: 1.5rem;
+//   color: #000;
+//   z-index: 999;
+//   #clock{
+//     font-size: 2rem;
+//   }
+//   img{
+//     max-height: 4rem;
+//   }
+// }
+
+.tedxkmutt {
+  img {
+    padding-top: 3rem;
+    margin: 0 auto;
+    width: 400px;
   }
-  .live-cir{
-    max-height: 1.5rem;
-    position: relative;
-    top: -.225rem;
-    animation: live_cir 1.5s linear infinite;
-    -webkit-animation: live_cir 1.5s linear infinite;
-  }
-  img{
-    max-height: 4rem;
-  }
+}
+
+.clock {
+  color: white;
+  font-size: 4em;
+}
+
+.live_cir {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.live-cir{
+  max-height: 1.5rem;
+  position: relative;
+  top: -.225rem;
+  animation: live_cir 1.5s linear infinite;
+  -webkit-animation: live_cir 1.5s linear infinite;
 }
 
 @keyframes live_cir {
