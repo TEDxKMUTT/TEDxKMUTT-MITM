@@ -1,16 +1,22 @@
 $tedred: #e80000;
 
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
 html,
 body{
   background-color: #e7e7e7;
   background-image: url('https://d3d9cvaw5rrb1q.cloudfront.net/events/backgrounds/000/000/886/original/bg_tedxkmutt.jpg?1471334766');
 }
 
-iframe{
-  width: 100%;
-  height: 70%;
-  // box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .75);
-}
+// iframe{
+//   width: 100%;
+//   height: 70%;
+//   // box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .75);
+// }
 
 #youtube{
   margin-top: 8rem;
@@ -20,13 +26,22 @@ iframe{
 }
 
 #alt{
+  color: white;
   padding: 1rem 0rem;
+  margin-top: 2em;
+  margin-bottom: 3em;
+
+  p{
+    font-size: 1.05em;
+  }
+
   #aisapp{
+    color: black;
     -webkit-appearance: none;
     border: none;
+    padding: 1.25rem 1.75rem;
     border-radius: 6px;
-    padding: .75rem 1.25rem;
-    background-color: #D2D52F;
+    @include linear-gradient(#D2D52F,lighten(#D2D52F,3));
     font-size: 2rem;
     outline: 0;
     img{
@@ -35,11 +50,11 @@ iframe{
     }
     &:hover,
     &:focus{
-      background-color: darken(#D2D52F, 5);
+      @include linear-gradient(lighten(#D2D52F,1),lighten(#D2D52F,10));
     }
 
     &:active{
-      background-color: darken(#D2D52F, 8);
+      @include linear-gradient(lighten(#D2D52F,1),lighten(#D2D52F,10));
     }
   }
 }
@@ -52,25 +67,6 @@ iframe{
     margin-top: 1rem;
   }
 }
-
-// .header{
-//   position: fixed;
-//   width: 100%;
-//   top: 0;
-//   background-color: #FFF;
-//   padding-top: 1em;
-//   padding-bottom: 1em;
-//   line-height: 4rem;
-//   font-size: 1.5rem;
-//   color: #000;
-//   z-index: 999;
-//   #clock{
-//     font-size: 2rem;
-//   }
-//   img{
-//     max-height: 4rem;
-//   }
-// }
 
 .tedxkmutt {
   img {
@@ -87,12 +83,12 @@ iframe{
 
 .live_cir {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 400;
 }
 
 .live-cir{
-  max-height: 1.5rem;
+  max-height: 1.8rem;
   position: relative;
   top: -.225rem;
   animation: live_cir 1.5s linear infinite;
@@ -121,8 +117,4 @@ iframe{
   100%{
     opacity: 1;
   }
-}
-
-.full-frame{
-
 }
