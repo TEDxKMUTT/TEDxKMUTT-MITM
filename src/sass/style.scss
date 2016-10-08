@@ -34,7 +34,7 @@ body {
 	padding: 5px;
 }
 .apply-now-btn-zone{
-	margin-top: -2em;
+	margin-top: -18rem;
 	margin-bottom: 2em;
 	text-align: center;
 	button{
@@ -103,6 +103,8 @@ nav {
 		}
 	}
 	.logo {
+		height: 100%;
+		display: inline-block;
 		img {
 			height: 100%;
 		}

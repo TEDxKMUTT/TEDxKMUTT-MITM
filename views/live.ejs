@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset='utf-8'>
+	<meta charset="utf-8">
 	<title>TEDxKMUTT : Man In The Mirror | LIVE!</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,36 +43,71 @@
 	<link rel="stylesheet" href="assets/libs/gridstack/dist/gridstack.min.css">
 </head>
 
-<body data-spy="scroll" data-target="#menu" data-offset="110">
-  <div class="header container-fluid">
-    <div class="col-md-5 col-xs-6 text-left">
-      <img src="/img/TEDxKMUTT1.png" alt="TEDxKMUTT">
+<body>
+	<div class="container">
+		<div class="header col-xs-12">
+			<div class="row tedxkmutt">
+				<img class="img-responsive" src="img/tedx_logo.png" alt="">
+			</div>
+			<div class="row clock text-center">
+				<div id="clock" class="">
+		      00:00:00 AM
+		    </div>
+			</div>
+		</div>
+
+		<div id="live" class="row text-center">
+			<div class="col-sm-10 col-sm-offset-1">
+				<div id="live_cir" class="text-right live_cir">
+					<img src="/img/live_cir.png" class="live-cir" alt="">
+		      LIVE
+				</div>
+			</div>
+			<div id="in" class="col-sm-10 col-sm-offset-1">
+	      <iframe class="card" width="100%" height="500" src="https://www.youtube.com/embed/Ab95lV41QqQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+	    </div>
+		</div>
+	</div>
+
+	<div id="alt" class="col-md-8 col-md-offset-2 col-xs-12 text-center">
+    <p>และอีก 1 ช่องทางในการรับชม TEDxKMUTT ที่นี่</p>
+    <button id="aisapp">
+      <img src="https://lh3.googleusercontent.com/ZitE6e8xo2ptVNJRX8M0MEyDr5btN4yARlPy3VDntZGk48PIVLvdqafKMZ0p98huuA=w300" alt="">
+      AIS Play Application
+    </button>
+  </div>
+  <!-- <div class="header container-fluid">
+    <div class="col-sm-5 col-xs-6 text-left">
+      <a href="/">
+        <img src="/img/TEDxKMUTT1.png" alt="TEDxKMUTT">
+      </a>
     </div>
-    <div id="clock" class="col-md-2 hidden-xs text-center">
+    <div id="clock" class="col-sm-3 hidden-xs text-center">
       TEST
     </div>
-    <div class="col-md-5 col-xs-6 text-right">
-      <img src="/img/live_cir.png" class="live-cir" alt="">
-      LIVE
+    <div class="col-sm-4 col-xs-6 text-right">
+
     </div>
   </div>
 
-  <div class="bar col-md-8 col-md-offset-2">
-    <!-- TEST -->
-  </div>
-
-  <div id="youtube" class="container-fluid">
-    <div id="in" class="col-md-8 col-md-offset-2">
+  <div id="youtube" class="container">
+		<div class="row">
+			<div class="pull-right">
+				<img src="/img/live_cir.png" class="live-cir" alt="">
+	      LIVE
+			</div>
+		</div>
+    <div id="in" class="col-md-12 card">
       <iframe width="100%" height="70%" src="https://www.youtube.com/embed/GeoUELDgyM4" frameborder="0" allowfullscreen></iframe>
-      <div id="alt" class="col-xs-12 text-center">
-        <p>อีก 1 ช่องทางในการรับชม TEDxKMUTT</p>
-        <button id="aisapp">
-          <img src="https://lh3.googleusercontent.com/ZitE6e8xo2ptVNJRX8M0MEyDr5btN4yARlPy3VDntZGk48PIVLvdqafKMZ0p98huuA=w300" alt="">
-          AIS Play Application
-        </button>
-      </div>
     </div>
-  </div>
+    <div id="alt" class="col-md-8 col-md-offset-2 col-xs-12 text-center card">
+      <p>อีก 1 ช่องทางในการรับชม TEDxKMUTT</p>
+      <button id="aisapp">
+        <img src="https://lh3.googleusercontent.com/ZitE6e8xo2ptVNJRX8M0MEyDr5btN4yARlPy3VDntZGk48PIVLvdqafKMZ0p98huuA=w300" alt="">
+        AIS Play Application
+      </button>
+    </div>
+  </div> -->
 </body>
 
 <script src="assets/libs/jquery/dist/jquery.min.js"></script>
