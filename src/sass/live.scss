@@ -36,6 +36,7 @@ body{
   }
 
   #aisapp{
+    min-height: 3.5em;
     color: black;
     -webkit-appearance: none;
     border: none;
@@ -56,6 +57,33 @@ body{
     &:active{
       @include linear-gradient(darken(#D2D52F,1),lighten(#D2D52F,10));
     }
+  }
+}
+
+#youtube{
+  color: #fff;
+  min-height: 3.5em;
+  -webkit-appearance: none;
+  border: none;
+  margin-top : 0 !important;
+  padding: 1.25rem 1.75rem;
+  border-radius: 6px;
+  @include linear-gradient(lighten(#c23231,1),lighten(#c23231,10));
+  font-size: 2rem;
+  outline: 0;
+
+  img{
+    max-width: 4rem;
+    margin-right: 1rem;
+  }
+
+  &:hover,
+  &:focus{
+    @include linear-gradient(darken(#c23231,1),lighten(#c23231,10));
+  }
+
+  &:active{
+    @include linear-gradient(darken(#c23231,1),lighten(#c23231,10));
   }
 }
 
@@ -121,4 +149,13 @@ body{
   100%{
     opacity: 1;
   }
+}
+
+.stream-by {
+  color: white;
+
+   a {
+     color: $tedred;
+     font-size: 1.2em;
+   }
 }
