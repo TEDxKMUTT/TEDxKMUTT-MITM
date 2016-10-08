@@ -3,3 +3,4 @@ drive*
 *.psd
 */.DS_STORE
 /npm-debug.log
+google*
