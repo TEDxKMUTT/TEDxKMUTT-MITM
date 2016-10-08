@@ -5,7 +5,9 @@ var server = require('http').createServer(app);
 var path = require('path');
 var bodyParser = require('body-parser');
 
-server.listen(5000);
+server.listen(5000, function(){
+    console.log("listening on ", server.address().port);
+});
 
 // parse various different custom JSON types as JSON
 app.use(bodyParser.json({ type: 'application/*+json' }))
