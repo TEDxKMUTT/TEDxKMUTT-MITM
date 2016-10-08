@@ -28,5 +28,5 @@ app.get('/', function(req, res){
 });
 
 app.get('/live', function(req, res){
-    res.render('live');
+    res.redirect('http://live.tedxkmutt.com/');
 });
